@@ -1,18 +1,14 @@
 package com.quiz.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import javax.persistence.*;
+import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 @Entity
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
     private String username;
-    private int score;
+    private int correctAnswers;
+    private int incorrectAnswers;
 }
