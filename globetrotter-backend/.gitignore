@@ -49,9 +49,9 @@ bin/
 *.env
 
 # Ignore dependencies and downloaded binaries
-.mvn/
-mvnw
-mvnw.cmd
+# .mvn/
+# mvnw
+# mvnw.cmd
 
 # Ignore test reports
 surefire-reports/
