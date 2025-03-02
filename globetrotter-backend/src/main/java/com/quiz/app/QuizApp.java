@@ -24,7 +24,7 @@ public class QuizApp
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Allow CORS for all endpoints
-                        .allowedOrigins("http://localhost:3000") // Allowed origins
+                        .allowedOrigins("http://localhost:3000","https://destinationquiznew.onrender.com/") // Allowed origins
                         .allowedMethods("GET", "POST", "PUT", "DELETE"); // Allowed methods
             }
         };
