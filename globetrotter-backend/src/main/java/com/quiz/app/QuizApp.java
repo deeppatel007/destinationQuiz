@@ -3,17 +3,14 @@ package com.quiz.app;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;  
 
-/**
- * Hello world!
- *
- */
 @SpringBootApplication(scanBasePackages = "com.quizApp")
-@ComponentScan(basePackages = {"com.quiz.controller", "com.quiz.repository", "com.quiz.service"})
+@ComponentScan(basePackages = {"com.quiz"})
+@EnableMongoRepositories(basePackages = "com.quiz.repository")
 public class QuizApp 
 {
     public static void main( String[] args )

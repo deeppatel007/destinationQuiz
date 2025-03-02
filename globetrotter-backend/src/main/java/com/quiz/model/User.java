@@ -1,12 +1,14 @@
 package com.quiz.model;
 
 import lombok.Data;
-import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Data
-@Entity
+@Document(collection = "Users")
 public class User {
+    
     @Id
     private String username;
     private int correctAnswers;
