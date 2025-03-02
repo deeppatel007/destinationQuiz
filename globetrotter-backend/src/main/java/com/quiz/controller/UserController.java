@@ -5,14 +5,14 @@ import com.quiz.service.UserService;
 import com.quiz.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.CrossOrigin;
+
 import java.io.IOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:3000") 
+@CrossOrigin(origins ={"http://localhost:3000","https://destinationquiznew.onrender.com/", "https://destinationquiznew.onrender.com"}) 
 public class UserController {
 
     @Autowired

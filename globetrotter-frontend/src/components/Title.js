@@ -68,7 +68,7 @@ function Title() {
               <h2 className="text-2xl font-semibold mb-2 text-blue-600">
                 Invitee's Score
               </h2>
-              <h3 className="text-lg font-bold">{inviteeScore.username}</h3>
+              <h3 className="text-lg font-bold">Invitee's Name: {inviteeScore.username}</h3>
               <h3 className="mt-2 text-xl">
                 ✅ <span className="text-green-500 font-bold">{inviteeScore.correctAnswers}</span> | ❌ <span className="text-red-500 font-bold">{inviteeScore.incorrectAnswers}</span>
               </h3>
