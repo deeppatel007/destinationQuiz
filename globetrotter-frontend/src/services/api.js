@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://globetrotter-backend-abc-latest.onrender.com';
+const API_BASE_URL = 'https://globetrotter-backend-ooo-latest.onrender.com';
 
 const api = {
   getRandomDestination: () => axios.get(`${API_BASE_URL}/questions/random`),
