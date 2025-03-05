@@ -14,6 +14,7 @@ The **Globetrotter Quiz App** is a fun and interactive game where users guess de
 ## 🌍 Live Demo
 Check out the live version of the project here: [Destination Quiz](https://destinationquiznew.onrender.com/) 🎯
 
+To view hit registration on startup and wait for 50 seconds as i have hosted backend on free service provider backend server will be up when first request comes.
 
 ## 🚀 How to Run the Project
 
